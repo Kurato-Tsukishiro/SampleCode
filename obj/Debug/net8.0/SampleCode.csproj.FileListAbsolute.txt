@@ -1,0 +1,15 @@
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.GeneratedMSBuildEditorConfig.editorconfig
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.AssemblyInfoInputs.cache
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.AssemblyInfo.cs
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.csproj.CoreCompileInputs.cache
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.sourcelink.json
+G:\05_Study\Program\Qiita\SampleCode\bin\Debug\net8.0\SampleCode.exe
+G:\05_Study\Program\Qiita\SampleCode\bin\Debug\net8.0\SampleCode.deps.json
+G:\05_Study\Program\Qiita\SampleCode\bin\Debug\net8.0\SampleCode.runtimeconfig.json
+G:\05_Study\Program\Qiita\SampleCode\bin\Debug\net8.0\SampleCode.dll
+G:\05_Study\Program\Qiita\SampleCode\bin\Debug\net8.0\SampleCode.pdb
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.dll
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\refint\SampleCode.dll
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.pdb
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\SampleCode.genruntimeconfig.cache
+G:\05_Study\Program\Qiita\SampleCode\obj\Debug\net8.0\ref\SampleCode.dll

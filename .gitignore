@@ -1,0 +1,6 @@
+SampleCode/SampleCode.csproj.user
+SampleCode/obj/
+SampleCode/bin/
+*.v2
+*.dll
+.vs/
