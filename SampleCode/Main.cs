@@ -15,6 +15,7 @@ internal static class SampleCode
                 break;
         }
 
+        Console.WriteLine($"\nキー操作で終了");
         Console.ReadKey();
     }
 
