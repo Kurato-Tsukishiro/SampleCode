@@ -5,7 +5,7 @@ namespace SampleCode;
 internal static class SampleCode
 {
     /// <summary> 実行死体サンプルコードの選択 </summary>
-    internal const SampleType Type = SampleType.TestConstructor_Capsule;
+    internal const SampleType Type = SampleType.TestConstructor_AbleNew;
 
     /// <summary>Typeで指定されているコードを実行する</summary>
     /// <param name="args"></param>
@@ -18,6 +18,9 @@ internal static class SampleCode
                 break;
             case SampleType.TestConstructor_Capsule:
                 TestConstructor.Capsule.TestConstructor.WriteConsole(args);
+                break;
+            case SampleType.TestConstructor_AbleNew:
+                TestConstructor.AbleNew.TestConstructor.WriteConsole(args);
                 break;
             default:
                 Console.WriteLine($"Typeが正常に登録されていません。");
@@ -34,5 +37,6 @@ internal static class SampleCode
     {
         None,
         TestConstructor_Capsule,
+        TestConstructor_AbleNew,
     }
 }
