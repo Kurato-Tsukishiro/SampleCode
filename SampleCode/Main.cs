@@ -6,6 +6,9 @@ internal static class SampleCode
 {
     /// <summary> 実行死体サンプルコードの選択 </summary>
     internal const SampleType Type = SampleType.TestConstructor_AbleNew;
+    /// <summary> main処理終了後, コンソールを閉じる時にキー入力を待機するか </summary>
+    // VSCodeのデバッグコンソールでは, 入力が対応されていない為 エラーが出る。このエラーはVSCの問題の為, コードには問題が無い。此処をfalseに変える事でエラーを防止できる。
+    internal const bool IsWaitingEnd = true;
 
     /// <summary>Typeで指定されているコードを実行する</summary>
     /// <param name="args"></param>
@@ -30,7 +33,7 @@ internal static class SampleCode
         Console.WriteLine($"\nキー操作で終了");
 
         // VSCodeのデバッグコンソールでは, 入力が対応されていない為 エラーが出る。このエラーはVSCの問題の為, コードには問題が無い。
-        Console.ReadKey(); // VSCでデバッグ時はコメントアウトする
+        if (IsWaitingEnd) Console.ReadKey();
     }
 
     internal enum SampleType
