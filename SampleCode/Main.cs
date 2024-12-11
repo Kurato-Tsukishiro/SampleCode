@@ -14,6 +14,9 @@ internal static class SampleCode
     internal const bool IsWaitingEnd = true; // VSCodeのデバッグコンソールでは, 入力が対応されていない為 エラーが出る。このエラーはVSCの問題の為, コードには問題が無い。此処をfalseに変える事でエラーを防止できる
 
     /// <summary>Typeで指定されているコードを実行する</summary>
+
+    /// <summary>Typeで指定されているコードを実行する</summary>
+    /// <param name="args"></param>
     static void Main(string[] args)
     {
         SampleType type;
@@ -27,7 +30,11 @@ internal static class SampleCode
 
             Console.WriteLine(typeText.ToString());
             Console.WriteLine("Type?");
-            if (int.TryParse(Console.ReadLine(), out int typeNumber) && 0 < typeNumber && typeNumber < maxValue) type = (SampleType)typeNumber;
+            if (int.TryParse(Console.ReadLine(), out int typeNumber) && 0 <= typeNumber && typeNumber <= maxValue)
+            {
+                type = (SampleType)typeNumber;
+                Console.WriteLine($"Run {type}.\n");
+            }
             else
             {
                 Main(args);
@@ -46,6 +53,9 @@ internal static class SampleCode
             case SampleType.TestConstructor_AbleNew:
                 TestConstructor.AbleNew.TestConstructor.WriteConsole(args);
                 break;
+            case SampleType.AlphabetIndex:
+                AlphabetIndex.main();
+                break;
             default:
                 Console.WriteLine($"Typeが正常に登録されていません。");
                 break;
@@ -62,5 +72,6 @@ internal static class SampleCode
         None,
         TestConstructor_Capsule,
         TestConstructor_AbleNew,
+        AlphabetIndex,
     }
 }
